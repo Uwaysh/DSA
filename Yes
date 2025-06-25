@@ -1,0 +1,7 @@
+p=int(input())
+for I in range(p):
+    t=input()
+    if t.upper()=='YES':
+          print("YES")
+    else:
+           print("NO" )
