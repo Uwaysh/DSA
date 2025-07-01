@@ -1,0 +1,9 @@
+t=int(input())
+for I in range(t):
+    a=list(map(int,input().split()))
+    if max(a[0],a[1]) < min(a[2],a[3]):
+         print("NO")
+    elif min(a[0],a[1]) > max(a[2],a[3]):
+        print("NO")
+    else:
+        print("YES")    
