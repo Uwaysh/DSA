@@ -1,0 +1,7 @@
+n=int(input())
+a=list(map(int,input().split()))
+p=a[::-1]
+if a==p:
+    print("YES")
+else:
+    print ("NO")
