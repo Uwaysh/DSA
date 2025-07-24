@@ -1,0 +1,11 @@
+a = int(input())
+b = int(input())
+ra = int(str(a).replace('0', ''))
+rb = int(str(b).replace('0', ''))
+sum1=a+b
+sum2=ra+rb
+sum0=int(str(sum1).replace('0', ''))
+if sum2==sum0:
+    print("YES")
+else:
+    print("NO")
