@@ -1,0 +1,10 @@
+n=int(input())
+m=list(map(int,input().split()))
+result=[]
+while len(m)>1:
+    result.append(m.pop(0))
+    if m:
+       result.append (m.pop())
+if m:
+    result.append(m[0])
+print(' '.join(map(str,result)) )   
