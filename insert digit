@@ -1,0 +1,14 @@
+t = int(input())
+for _ in range(t):
+    n, d = map(int, input().split())
+    m = input().strip()
+    inserted = False
+    result = []
+    for digit in m:
+        if not inserted and int(digit) < d:
+            result.append(str(d))
+            inserted = True
+        result.append(digit)
+    if not inserted:
+        result.append(str(d))
+    print(''.join(result))
